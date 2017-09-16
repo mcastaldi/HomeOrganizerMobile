@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Home Organization</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_license">License</string>
+    <string name="action_export">Export</string>
+
+    <string name="nav_header_title">Navigation Menu</string>
+    <string name="nav_header_subtitle">Getting Started(add link)</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_add_item">Add Item</string>
+    <string name="nav_add_room">Add Room</string>
+    <string name="nav_add_storage">Add Storage</string>
+    <string name="nav_overall_info">Overall Info</string>
+
+    <string name="license_text">Icons are used under the CC-BY license found at
+        https://creativecommons.org/licenses/by/4.0/</string>
+    <string name="title_activity_add_item">Add Item</string>
+    <string name="submitText">Button</string>
+    <string name="fillerName">Name</string>
+    <string name="title_activity_add_room">Add Room</string>
+    <string name="title_activity_add_storage">Add Storage</string>
+    <string name="title_activity_overall_info">OverallInfoActivity</string>
+
+    <string name="get_suggested_storage_dialog_text">Would you like to get a suggested location to store this item from our server? A permanent answer can be set in the settings menu.</string>
+    <string name="get_suggested_storage_confirm_message">Confirmed</string>
+    <string name="get_suggested_storage_confirm_button">Yes</string>
+    <string name="get_suggested_storage_cancel_message">Canceled</string>
+    <string name="get_suggested_storage_cancel_button">No</string>
+    <string name="title_activity_prefs">PrefsActivity</string>
+    <string name="connect_pref_text">Connect to Server</string>
+    <string name="ask_suggestion_pref_text">Show Suggestion Pop-up</string>
+    <string name="item_info_pref_text">Always Get Item Info</string>
+    <string name="connect_pref">connect_pref</string>
+    <string name="ask_suggestion_pref">ask_suggestion_pref</string>
+    <string name="item_info_pref">item_info_pref</string>
+
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+    <string name="scan">Scan</string>
+    <string name="submit">Submit</string>
+    <string name="scanner_pref">scanner_pref</string>
+    <string name="scanner_pref_text">Always Allow Scanner</string>
+    <string name="ask_scanner_pref">ask_scanner_pref</string>
+    <string name="ask_scanner_pref_text">Show Scanner Pop-up</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="title_activity_getting_started">GettingStartedActivity</string>
+    <string name="suggestion_pref">suggestion_pref</string>
+    <string name="suggestion_pref_text">Always give suggestions</string>
+    <string name="textfiller">TextFiller</string>
+    <string name="delete">Delete</string>
+    <string name="scan_barcode_msg">Could not set up the detector!</string>
+
+    <string name="item_count">Count: %1$d</string>
+    <string name="item_detail_room">Room: %1$s</string>
+    <string name="item_detail_storage">Storage: %1$s</string>
+    <string name="item_detail_barcode">Barcode: %1$d</string>
+    <string name="item_detail_cost">Cost: %1$s</string>
+    <string name="room_floor">Floor: %1$s</string>
+    <string name="room_storages">Storages: %1$d</string>
+    <string name="storage_num_items">Items: %1$d</string>
+</resources>

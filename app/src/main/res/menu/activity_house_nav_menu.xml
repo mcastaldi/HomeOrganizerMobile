@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_home" />
+        <item
+            android:id="@+id/nav_add_item"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="@string/nav_add_item" />
+        <item
+            android:id="@+id/nav_add_room"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="@string/nav_add_room" />
+        <item
+            android:id="@+id/nav_add_storage"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="@string/nav_add_storage" />
+        <item
+            android:id="@+id/nav_overall_info"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="@string/nav_overall_info" />
+        <item
+            android:id="@+id/nav_getting_started"
+            android:icon="@drawable/ic_getting_started"
+            android:title="@string/getting_started" />
+    </group>
+
+</menu>

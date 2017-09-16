@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items">
+        <item>Book1</item>
+        <item>Book2</item>
+        <item>Book3</item>
+        <item>Book4</item>
+        <item>Book5</item>
+        <item>Book6</item>
+        <item>Book7</item>
+        <item>Book8</item>
+        <item>Book9</item>
+        <item>Book10</item>
+        <item>Book11</item>
+        <item>Book12</item>
+        <item>Book13</item>
+        <item>Book14</item>
+        <item>Book15</item>
+    </string-array>
+
+</resources>

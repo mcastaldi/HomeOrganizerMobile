@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_add_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="castaldini.homeorganizationmobile.AddItemActivity"
+    tools:showIn="@layout/app_bar_add_item">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:text="Barcode:"
+            android:labelFor="@+id/addItemBarcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addItemBarcodeLabel"
+            android:layout_alignBaseline="@+id/addItemBarcode"
+            android:layout_alignBottom="@+id/addItemBarcode"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/addItemBarcode"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/submitBarcodeButton"
+            android:layout_toRightOf="@+id/addItemBarcodeLabel"
+            android:layout_toEndOf="@+id/addItemBarcodeLabel"
+
+            />
+
+        <Button
+            android:id="@+id/submitBarcodeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scan"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="submitBarcodeClicked"/>
+
+        <TextView
+            android:layout_below="@+id/addItemBarcode"
+            android:text="Select Room"
+            android:labelFor="@+id/addItemSelectRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/addItemSelectRoom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:id="@+id/addItemSelectRoomLabel" />
+
+        <TextView
+            android:text="Select Storage"
+            android:labelFor="@+id/addItemSelectStorage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:id="@+id/addItemSelectStorageLabel"
+            android:layout_below="@+id/addItemSelectRoom"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addItemSelectRoom"
+            android:layout_marginTop="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addItemSelectStorageLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:id="@+id/addItemSelectStorage" />
+
+        <TextView
+            android:text="Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:id="@+id/addItemNameLabel"
+            android:labelFor="@+id/addItemName"
+            android:layout_below="@+id/addItemSelectStorage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/addItemName"
+            android:layout_alignBaseline="@+id/addItemNameLabel"
+            android:layout_alignBottom="@+id/addItemNameLabel"
+            android:layout_alignLeft="@+id/addItemBarcode"
+            android:layout_alignStart="@+id/addItemBarcode" />
+
+        <TextView
+            android:text="Cost:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addItemNameLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="33dp"
+            android:id="@+id/addItemCostLabel"
+            android:labelFor="@+id/addItemCost"
+            android:layout_alignLeft="@+id/addItemNameLabel"
+            android:layout_alignStart="@+id/addItemNameLabel" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/addItemCost"
+            android:layout_alignBaseline="@+id/addItemCostLabel"
+            android:layout_alignBottom="@+id/addItemCostLabel"
+            android:layout_alignLeft="@+id/addItemName"
+            android:layout_alignStart="@+id/addItemName" />
+
+        <TextView
+            android:text="Count:"
+            android:labelFor="@+id/addItemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:id="@+id/addItemCountLabel"
+            android:layout_below="@+id/addItemCostLabel"
+            android:layout_alignLeft="@+id/addItemCostLabel"
+            android:layout_alignStart="@+id/addItemCostLabel" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/addItemCount"
+            android:layout_alignBaseline="@+id/addItemCountLabel"
+            android:layout_alignBottom="@+id/addItemCountLabel"
+            android:layout_alignLeft="@+id/addItemCost"
+            android:layout_alignStart="@+id/addItemCost" />
+
+        <Button
+            android:text="Add Item"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/addItemSelectRoomLabel"
+            android:layout_alignStart="@+id/addItemSelectRoomLabel"
+            android:layout_below="@+id/addItemCount"
+            android:layout_marginTop="19dp"
+            android:id="@+id/addItemButton"
+            android:onClick="addItemButtonPressed"/>
+        <!--
+        <TextView
+            android:text="Select Room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/addItemSelectRoom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:id="@+id/addItemSelectRoomLabel" />
+
+        <TextView
+            android:text="Select Storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:id="@+id/addItemSelectStorageLabel"
+            android:layout_below="@+id/addItemSelectRoom"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addItemSelectRoom"
+            android:layout_marginTop="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addItemSelectStorageLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:id="@+id/addItemSelectStorage" />
+
+        <TextView
+            android:text="Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:id="@+id/addItemNameLabel"
+            android:layout_below="@+id/addItemSelectStorage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/addItemName"
+            android:layout_alignBaseline="@+id/addItemNameLabel"
+            android:layout_alignBottom="@+id/addItemNameLabel"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:text="Barcode:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addItemName"
+            android:layout_alignLeft="@+id/addItemNameLabel"
+            android:layout_alignStart="@+id/addItemNameLabel"
+            android:layout_marginTop="33dp"
+            android:id="@+id/addItemBarcodeLabel" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_below="@+id/addItemName"
+            android:layout_alignLeft="@+id/addItemName"
+            android:layout_alignStart="@+id/addItemName"
+            android:layout_marginTop="19dp"
+            android:id="@+id/addItemBarcode" />
+
+        <TextView
+            android:text="Count:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:id="@+id/addItemCountLabel"
+            android:layout_below="@+id/addItemBarcode"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_below="@+id/addItemBarcode"
+            android:layout_alignLeft="@+id/addItemBarcode"
+            android:layout_alignStart="@+id/addItemBarcode"
+            android:layout_marginTop="19dp"
+            android:id="@+id/addItemCount" />
+
+        <TextView
+            android:text="Cost:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addItemCount"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="33dp"
+            android:id="@+id/addItemCostLabel"
+            android:layout_alignRight="@+id/addItemBarcodeLabel"
+            android:layout_alignEnd="@+id/addItemBarcodeLabel" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:layout_below="@+id/addItemCount"
+            android:layout_alignLeft="@+id/addItemCount"
+            android:layout_alignStart="@+id/addItemCount"
+            android:layout_marginTop="19dp"
+            android:id="@+id/addItemCost" />
+
+        <Button
+            android:text="Add Item"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/addItemSelectRoomLabel"
+            android:layout_alignStart="@+id/addItemSelectRoomLabel"
+            android:layout_below="@+id/addItemCost"
+            android:layout_marginTop="19dp"
+            android:id="@+id/addItemButton" /> -->
+
+    </RelativeLayout>
+
+</ScrollView>

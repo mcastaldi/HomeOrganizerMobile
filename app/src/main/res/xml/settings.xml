@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/connect_pref"
+        android:title="@string/connect_pref_text"
+        android:summary="Master switch to allow connections to server for item info or suggestions. Overrides other options."/>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/suggestion_pref"
+        android:title="@string/suggestion_pref_text" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/ask_suggestion_pref"
+        android:title="@string/ask_suggestion_pref_text"
+        android:summary="Shows the pop-up asking if the user wants to get a location suggestion. Combine this with a false setting above to auto deny."/>
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/item_info_pref"
+        android:title="@string/item_info_pref_text" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/scanner_pref"
+        android:title="@string/scanner_pref_text" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/ask_scanner_pref"
+        android:title="@string/ask_scanner_pref_text"
+        android:summary="Shows the pop-up asking if the user wants to use the scanner. Combine this with a false setting above to not use scanner."/>
+</PreferenceScreen>

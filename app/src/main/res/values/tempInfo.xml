@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tempRooms">
+        <item>Living Room</item>
+        <item>Kitchen</item>
+        <item>Master Bedroom</item>
+        <item>Guest Bedroom</item>
+        <item>Library</item>
+        <item>Garage</item>
+    </string-array>
+    <string-array name="tempStorages">
+        <item>Bookcase</item>
+        <item>Drawer</item>
+        <item>Fridge</item>
+        <item>Cupboard</item>
+        <item>Safebox</item>
+    </string-array>
+</resources>
